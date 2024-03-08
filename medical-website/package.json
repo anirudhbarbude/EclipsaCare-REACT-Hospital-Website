@@ -1,10 +1,18 @@
 {
+  "homepage" : "https://anirudhbarbude.github.io/EclipsaCare-REACT-Hospital-Website/",
+
+  
+  "start": "react-scripts start",
   "name": "medical-website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -b masternn",
+
+
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
